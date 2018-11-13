@@ -1,4 +1,61 @@
-<h1>Home</h1>
-<p>
-  This is the home page for the Lego Town training application.
-</p>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Lego Town</h1>
+          <p class="lead text-muted">Look at the experiences below to learn more about our town.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Sign-In</a>
+            <a href="#" class="btn btn-primary my-2">New User?</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <%= link_to(image_tag('jobs.jpg', draggable: "true", id: "drag1"), "/static_pages/jobs") %>
+                <div class="card-body">
+                  <h1> Jobs </h1>
+                  <p class="card-text">Our town works with many local businesses to have a steady influx of careers in exciting fields.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                  <%= link_to(image_tag('living.jpg', draggable: "true", id: "drag1"), "/static_pages/living") %>
+                <div class="card-body">
+                  <h1> Living </h1>
+                  <p class="card-text">We have many types of living situations, each affordable, green & community driven.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                  <%= link_to(image_tag('fun.jpg', draggable: "true", id: "drag1"), "/static_pages/fun") %>
+                  <h1> Fun </h1>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="/">Home</a>
+          <a href="/static_pages/jobs">Jobs</a>
+          <a href="/static_pages/living">Living</a>
+          <a href="/static_pages/Fun">Fun</a>
+        </p>
+          </div>
+    </footer>
